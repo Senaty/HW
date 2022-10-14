@@ -1,0 +1,5 @@
+n=int(input("введите 3-х значное число:"))
+a=str(n//100)
+s=str(n//10%10)
+d=str(n%10)
+print(n,a+d+s,s+a+d,s+d+a,d+a+s,d+s+a, sep='\n')
