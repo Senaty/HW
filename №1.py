@@ -1,3 +1,5 @@
-n = int(input())
-for i in range(1, 11):
-    print(n, 'x', i, '=', n * i)
+N, a, b = int(input()), int(input()), int(input())
+for i in range(N, 0, -1):
+    if i % 2 == 1:
+        if i > max(a, b) or i < min(a, b):
+            print(i)

@@ -1,7 +1,7 @@
-s=input('Введите никнейм:')
-if len(s) <3:
-    print('Ник-нейм должен состоять минимум из 3 символов!')
-elif 3 <= len(s) <= 15:
-    print('Ник-нейм принят')
-else:
-    print('Ник-нейм может состоять максимум из 15 символов!')
+import math
+
+N = int(input())
+for r in range(1, N+1):
+    if r != 5:
+        print('S', r, '=', f"{r ** 2 * math.pi:.3f}")
+        print('L', r, '=', f"{r * 2 * math.pi:.3f}")
