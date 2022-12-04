@@ -1,5 +1,7 @@
-N, a, b = int(input()), int(input()), int(input())
-for i in range(N, 0, -1):
-    if i % 2 == 1:
-        if i > max(a, b) or i < min(a, b):
-            print(i)
+n = int(input())
+s = ''
+for i in range(n):
+    i += 1
+    i = input('Введите слово:')
+    s += i[0]
+print(s.upper())

@@ -1,13 +1,18 @@
-import random
+import string
 
-N = int(input())
-a = random.randint(0, 1000)
-b = random.randint(0, 1000)
-if max(a, b) < N < min(a, b):
-    print('Lucky!')
-elif max(a, b) > N > min(a, b):
-    print('Lucky!')
-else:
-    print("Tru again!")
-print(a)
-print(b)
+s = input()
+while 1 == 1:
+    if s == 'end':
+        break
+    elif s.isdigit():
+        for i in s:
+            print(10 * int(i))
+    elif s.isalpha():
+        for i in set(s):
+            s.count(i)
+            print(i, '=', s.count(i))
+    else:
+        for i in range(0, len(s)):
+            if s[i] in string.punctuation:
+                print(i, end=',')
+    s = input()

@@ -1,7 +1,18 @@
-import math
+import random
 
-N = int(input())
-for r in range(1, N+1):
-    if r != 5:
-        print('S', r, '=', f"{r ** 2 * math.pi:.3f}")
-        print('L', r, '=', f"{r * 2 * math.pi:.3f}")
+s = int(input())
+a = int(input())
+b = int(input())
+n = []
+for i in range(s):
+    f = random.randint(a, b)
+    n.append(f)
+print(n)
+print(s)
+print(max(n))
+print(min(n))
+n.sort()
+print(n)
+n.sort(reverse=True)
+print(n)
+
